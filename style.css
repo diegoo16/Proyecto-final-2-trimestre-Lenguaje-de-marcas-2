@@ -542,11 +542,19 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  height: 330px;
 }
 
+
+
 .jugador img {
+
   width: 100%;
+  height: 230px;        
+  object-fit: cover;    
+  border-radius: 12px;
 }
+
 
 
 .numero {
