@@ -559,7 +559,7 @@ body {
 
 .numero {
   position: absolute;
-  bottom: 65px;
+  bottom: 85px;
   left: 12px;
   background: #000000;
   color: var(--blanco);
