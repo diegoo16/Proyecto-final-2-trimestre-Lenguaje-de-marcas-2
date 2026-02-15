@@ -13,32 +13,43 @@
 }
 
 /* Pagina Principal*/
-.body {
+:root {
+  --azul-oscuro: #0a1a3f;
+  --azul: #0b2cff;
+  --blanco: #ffffff;
+  --gris: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--gris);
-  background-image: url(imagenes/fondo\ champions.jpg);
+  background: linear-gradient(rgba(10, 26, 63, 0.8), rgba(10, 26, 63, 0.8)),
+    url(010dbafe-f037-4c33-ae3e-dc2f76549631.png);
   background-size: cover;
-  background-position: c;
+  background-position: center;
 }
-
-
 
 .header {
   background: linear-gradient(90deg, #020c2b, #0b2cff);
   color: var(--blanco);
   text-align: center;
   padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
   width: 170px;
   height: 120px;
   margin-bottom: 10px;
-  border-radius: 0%;
 }
-
 
 .menu {
   display: flex;
@@ -51,57 +62,96 @@
   text-decoration: none;
   padding: 15px 25px;
   transition: 0.3s;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
 }
 
-.menu a:hover,
+.menu a:hover {
+  background: var(--azul);
+  border-bottom: 3px solid white;
+}
+
 .menu a.active {
   background: var(--azul);
 }
 
-
 .contenido {
   flex: 1;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 60px auto;
   background: var(--blanco);
-  padding: 40px;
-  border-radius: 12px;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .contenido h2 {
   text-align: center;
   margin-bottom: 30px;
   color: var(--azul-oscuro);
+  font-size: 28px;
+  letter-spacing: 1px;
+  border-bottom: 4px solid var(--azul);
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .texto p {
-  margin-bottom: 18px;
-  line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.7;
   text-align: justify;
+  font-size: 17px;
+  color: #333;
+}
+
+.boton-contenedor {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--azul);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--azul-oscuro);
+  transform: scale(1.05);
 }
 
 .footer {
   background: #000;
   color: var(--blanco);
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-
 @media (max-width: 768px) {
+
   .menu {
     flex-direction: column;
   }
 
   .menu a {
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .contenido {
     margin: 20px;
-    padding: 25px;
+    padding: 30px;
   }
+
 }
+
 
 /* Pagina Principal*/
 
@@ -558,8 +608,8 @@ body {
 .jugador img {
 
   width: 100%;
-  height: 230px;        
-  object-fit: cover;    
+  height: 230px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
