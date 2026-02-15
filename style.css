@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(rgba(10, 26, 63, 0.8), rgba(10, 26, 63, 0.8)),
-    url(010dbafe-f037-4c33-ae3e-dc2f76549631.png);
+    url(Imagenes/BACKGROUND.png);
   background-size: cover;
   background-position: center;
 }
