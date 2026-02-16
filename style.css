@@ -3,6 +3,7 @@
   --azul: #0b2cff;
   --blanco: #ffffff;
   --gris: #e5e5e5;
+  --negro: #000000;
 }
 
 * {
@@ -13,32 +14,30 @@
 }
 
 /* Pagina Principal*/
-.body {
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--gris);
-  background-image: url(imagenes/fondo\ champions.jpg);
+  background: linear-gradient(rgba(10, 26, 63, 0.8), rgba(10, 26, 63, 0.8)),
+              url("Imagenes/BACKGROUND.png");
   background-size: cover;
-  background-position: c;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-
 
 .header {
   background: linear-gradient(90deg, #020c2b, #0b2cff);
   color: var(--blanco);
   text-align: center;
   padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
   width: 170px;
   height: 120px;
   margin-bottom: 10px;
-  border-radius: 0%;
 }
-
 
 .menu {
   display: flex;
@@ -51,42 +50,77 @@
   text-decoration: none;
   padding: 15px 25px;
   transition: 0.3s;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
 }
 
-.menu a:hover,
+.menu a:hover {
+  background: var(--azul);
+  border-bottom: 3px solid white;
+}
+
 .menu a.active {
   background: var(--azul);
 }
 
-
 .contenido {
   flex: 1;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 60px auto;
   background: var(--blanco);
-  padding: 40px;
-  border-radius: 12px;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .contenido h2 {
   text-align: center;
   margin-bottom: 30px;
   color: var(--azul-oscuro);
+  font-size: 28px;
+  letter-spacing: 1px;
+  border-bottom: 4px solid var(--azul);
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .texto p {
-  margin-bottom: 18px;
-  line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.7;
   text-align: justify;
+  font-size: 17px;
+  color: #333;
+}
+
+.boton-contenedor {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: var(--azul);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: var(--azul-oscuro);
+  transform: scale(1.05);
 }
 
 .footer {
   background: #000;
   color: var(--blanco);
   text-align: center;
-  padding: 15px;
+  padding: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
-
 
 @media (max-width: 768px) {
   .menu {
@@ -95,11 +129,12 @@
 
   .menu a {
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .contenido {
     margin: 20px;
-    padding: 25px;
+    padding: 30px;
   }
 }
 
@@ -109,6 +144,7 @@
 
 .title {
   font-size: 40px;
+  color: var(--blanco);
 }
 
 .contenido_equipos {
@@ -177,7 +213,6 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-
 }
 
 .AC_Milan_escudo {
@@ -246,7 +281,6 @@
   width: 150px;
   height: 150px;
 }
-
 
 /* Grupo C */
 
@@ -381,89 +415,6 @@
 
 /* PLANTILLA Equipos */
 
-
-:root {
-  --azul-oscuro: #0a1a3f;
-  --azul: #0b2cff;
-  --blanco: #ffffff;
-  --gris: #f5f5f5;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--blanco);
-}
-
-
-.header {
-  background: linear-gradient(90deg, #020c2b, #0b2cff);
-  color: var(--blanco);
-  text-align: center;
-  padding: 30px 20px;
-}
-
-
-.menu {
-  display: flex;
-  justify-content: center;
-  background: var(--azul-oscuro);
-}
-
-.menu a {
-  color: var(--blanco);
-  text-decoration: none;
-  padding: 15px 25px;
-
-}
-
-.menu a:hover,
-.menu a.active {
-  background: var(--azul);
-}
-
-
-.contenido {
-  flex: 1;
-  max-width: 900px;
-  margin: 40px auto;
-  background: var(--gris);
-  padding: 40px;
-  border-radius: 14px;
-  color: #222;
-}
-
-.contenido h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: var(--azul-oscuro);
-}
-
-.texto p {
-  margin-bottom: 18px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-
-.footer {
-  background: #000;
-  color: var(--blanco);
-  text-align: center;
-  padding: 15px;
-}
-
-
 .plantilla {
   max-width: 1200px;
   margin: 40px auto;
@@ -486,7 +437,6 @@ body {
   border: none;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .entrenador {
   display: flex;
@@ -511,7 +461,6 @@ body {
   color: #444;
 }
 
-
 .posicion {
   margin: 35px 0 15px;
   color: var(--azul-oscuro);
@@ -519,7 +468,6 @@ body {
   font-weight: bold;
   text-align: left;
 }
-
 
 .fila {
   display: flex;
@@ -529,7 +477,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 .jugador {
   width: 190px;
@@ -543,19 +490,20 @@ body {
   align-items: center;
   position: relative;
   height: 330px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
+.jugador:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
 
 .jugador img {
-
   width: 100%;
-  height: 230px;        
-  object-fit: cover;    
+  height: 230px;
+  object-fit: cover;
   border-radius: 12px;
 }
-
-
 
 .numero {
   position: absolute;
@@ -567,7 +515,6 @@ body {
   border-radius: 10px;
   font-size: 15px;
 }
-
 
 .jugador p {
   margin-top: 12px;
@@ -589,3 +536,21 @@ body {
     justify-content: center;
   }
 }
+/*Cuadro de partidos*/
+
+.partido-contenido{
+  flex: 1;
+  width: 1300px;
+  margin: 60px auto;
+  background: var(--blanco);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.partido-title {
+  font-size: 40px;
+  color: var(--negro);
+}
+
+/*Cuadro de partidos*/
