@@ -3,6 +3,7 @@
   --azul: #0b2cff;
   --blanco: #ffffff;
   --gris: #e5e5e5;
+  --negro: #000000;
 }
 
 * {
@@ -536,3 +537,21 @@ body {
     justify-content: center;
   }
 }
+/*Cuadro de partidos*/
+
+.partido-contenido{
+  flex: 1;
+  width: 1300px;
+  margin: 60px auto;
+  background: var(--blanco);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.partido-title {
+  font-size: 40px;
+  color: var(--negro);
+}
+
+/*Cuadro de partidos*/
