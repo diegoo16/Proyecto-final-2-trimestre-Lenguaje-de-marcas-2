@@ -30,7 +30,7 @@ const products = [
     {
         name: "Camiseta El Alamo",
         price: "20.00€",
-        category: "delux",
+        category: "delux", 
         image: "",
         description: "Camiseta de edición limitada.",
     },
@@ -51,7 +51,7 @@ const products = [
     {
         name: "Chandal Diego Team",
         price: "45.00€",
-        category: "chandales",
+        category: "chandales", 
         image: "",
         description: "Chándal edicion limitada del Diego Team.",
     },
@@ -164,10 +164,11 @@ const products = [
         name: "Bufanda Delux",
         price: "5.00€",
         category: "delux",
-        image: "",
+        image: src="",
         description: "Bufanda de la mejor competicion , la Champions League Delux.",
     },
 ];
+
 
 const productContainer = document.querySelector('.productos');
 
@@ -181,12 +182,12 @@ function loadProducts(category) {
 
     filteredProducts.forEach(product => {
         const card = document.createElement('div');
-        card.classList.add('tarjeta-producto');
+        card.classList.add('tarjeta__producto');
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.price}</p>
-            <button>Ver detalles</button>
+            <img src="${product.image}">
+            <h3 class="tarjeta__producto__imagen">${product.name}</h3>
+            <p class="tarjeta__producto__precio" >${product.price}</p>
+            <button class="tarjeta__producto__boton" >Ver detalles</button>
         `;
 
         card.querySelector('button').addEventListener('click', () => showDetails(product));
