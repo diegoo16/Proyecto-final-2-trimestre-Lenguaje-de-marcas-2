@@ -835,6 +835,10 @@ body {
     color: #0b6c49;
 }
 
+.td--igual{
+  color: #000000;
+}
+
 .td--neg {
     color: #8a1f1f;
 }
