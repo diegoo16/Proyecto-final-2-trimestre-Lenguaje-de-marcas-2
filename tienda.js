@@ -3,7 +3,7 @@ const products = [
         name: "Camiseta Diego Team",
         price: "20.00€",
         category: "camisetas",
-        image: "",
+        image: src ="",
         description: "Camiseta oficial del Diego Team.",
     },
     {
@@ -184,8 +184,8 @@ function loadProducts(category) {
         const card = document.createElement('div');
         card.classList.add('tarjeta__producto');
         card.innerHTML = `
-            <img src="${product.image}">
-            <h3 class="tarjeta__producto__imagen">${product.name}</h3>
+            <img src="${product.image}" class="tarjeta__producto__imagen">            
+            <h3 class="tarjeta__producto__nombre">${product.name}</h3>
             <p class="tarjeta__producto__precio" >${product.price}</p>
             <button class="tarjeta__producto__boton" >Ver detalles</button>
         `;
