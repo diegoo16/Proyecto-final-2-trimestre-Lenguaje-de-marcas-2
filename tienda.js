@@ -57,7 +57,7 @@ const products = [
     },
     {
         name: "Chandal Leyendas Ogre Team",
-        price: "$45.00€",
+        price: "45.00€",
         category: "chandales",
         image: "/Imagenes/ogre chandal.png",
         description: "Chándal edicion limitada del Ogre Team.",
@@ -71,14 +71,14 @@ const products = [
     },
     {
         name: "Chandal Barcelona Dream Team",
-        price: "$45.00€",
+        price: "45.00€",
         category: "chandales",
         image: "/Imagenes/barcelona chandal.png",
         description: "Chándal edicion limitada del Fc Barcelona.",
     },
     {
         name: "Chandal El Alamo",
-        price: "$45.00€",
+        price: "45.00€",
         category: "chandales",
         image: "/Imagenes/alamo chandal.png",
         description: "Chándal edicion limitada del Alamo.",
@@ -155,7 +155,7 @@ const products = [
     },
     {
         name: "Chandal Delux",
-        price: "$50.00€",
+        price: "50.00€",
         category: "delux",
         image: "/Imagenes/delux chandal.png",
         description: "Chandal de la mejor competicion , la Champions League Delux.",
