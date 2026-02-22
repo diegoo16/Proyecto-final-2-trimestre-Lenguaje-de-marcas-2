@@ -30,7 +30,7 @@ const products = [
     {
         name: "Camiseta El Alamo",
         price: "20.00€",
-        category: "delux", 
+        category: "camisetas", 
         image: "/Imagenes/alamo camiseta.png",
         description: "Camiseta de edición limitada.",
     },
