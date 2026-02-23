@@ -17,7 +17,7 @@ const products = [
         name: "Camiseta Alcorcon",
         price: "20.00€",
         category: "camisetas",
-        image: "/Imagenes/alcorcon camiseta.jpg",
+        image: "/Imagenes/camiseta alcorcon 1.png",
         description: "Camiseta oficial del Real Madrid.",
     },
     {
