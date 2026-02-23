@@ -559,6 +559,10 @@ body {
 /* Resultados */
 .resultados {
   padding: 40px;
+  background-color: var(--blanco);
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 26px 18px 44px;
 }
 
 .resultados h2 {
