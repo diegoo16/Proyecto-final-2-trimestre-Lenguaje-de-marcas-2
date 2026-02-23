@@ -563,6 +563,8 @@ body {
   margin: 0 auto;
   max-width: 1100px;
   padding: 26px 18px 44px;
+  width: 60%;
+}
 /*Tienda*/
 
 
@@ -651,5 +653,4 @@ body {
 .modal-contenido img {
     width: 100%;
     height: auto;
-}
 }
