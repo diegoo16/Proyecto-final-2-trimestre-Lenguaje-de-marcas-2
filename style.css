@@ -544,6 +544,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 26px 18px 44px;
+    background-color: var(--blanco);
 }
 
 .sheet {
