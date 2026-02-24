@@ -849,15 +849,9 @@ body {
   margin: 0 auto;
   max-width: 1100px;
   padding: 26px 18px 44px;
-/*Tienda*/
 
 
-.filtros {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
+/* Resultados */
 .resultados h2 {
   text-align: left;
 }
@@ -900,8 +894,60 @@ body {
 .goleadores p {
   margin: 5px 0;
 }
+}
 
-/* Resultados */
+/* Tienda */
+
+.filtros {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.filtros__boton {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.filtros__boton:hover {
+    background-color: #555;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta__producto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.tarjeta__producto:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta__producto__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjeta__producto__nombre {
+    margin: 10px 0;
+}
+
 .tarjeta__producto__precio {
     color: #777;
 }
@@ -922,7 +968,6 @@ body {
     height: 100%;
     overflow: auto;
     background-color: black;
-    background-color: black;
 }
 
 .modal-contenido {
@@ -937,5 +982,4 @@ body {
 .modal-contenido img {
     width: 100%;
     height: auto;
-}
 }
