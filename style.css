@@ -849,13 +849,8 @@ body {
   margin: 0 auto;
   max-width: 1100px;
   padding: 26px 18px 44px;
-<<<<<<< HEAD
   width: 60%;
 }
-/*Tienda*/
-=======
->>>>>>> 72e4ab3d8991960271d8233aace388dcc15bf39d
-
 
 /* Resultados */
 .resultados h2 {
@@ -900,7 +895,7 @@ body {
 .goleadores p {
   margin: 5px 0;
 }
-}
+
 
 /* Tienda */
 
@@ -988,8 +983,4 @@ body {
 .modal-contenido img {
     width: 100%;
     height: auto;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 72e4ab3d8991960271d8233aace388dcc15bf39d
