@@ -164,7 +164,7 @@ const products = [
         name: "Bufanda Delux",
         price: "5.00€",
         category: "delux",
-        image: src="/Imagenes/delux bufanda.png",
+        image:"/Imagenes/delux bufanda.png",
         description: "Bufanda de la mejor competicion , la Champions League Delux.",
     },
 ];
