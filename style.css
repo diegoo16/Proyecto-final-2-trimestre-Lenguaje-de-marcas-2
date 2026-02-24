@@ -609,3 +609,93 @@ body {
   margin: 5px 0;
 }
 }
+
+/* Tienda */
+
+/* Estilos para la tienda */
+
+.filtros {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.filtros__boton {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.filtros__boton:hover {
+    background-color: #555;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.tarjeta__producto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.tarjeta__producto:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta__producto__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjeta__producto__nombre {
+    margin: 10px 0;
+}
+
+.tarjeta__producto__precio {
+    color: #777;
+}
+
+.tarjeta__producto__boton {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.modal {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid grey;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.modal-contenido img {
+    width: 100%;
+    height: auto;
+}
