@@ -896,6 +896,57 @@ body {
   margin: 5px 0;
 }
 
+@media (max-width: 768px) {
+    .resultados {
+        padding: 10px;
+    }
+
+    .resultados h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card-resultado {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .imagen-equipo {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .card-resultado h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .marcador {
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .goleadores {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .equipo1,
+    .equipo2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .goleadores p {
+        font-size: 14px;
+    }
+}
+
+/* Resultados */
 
 /* Tienda */
 
@@ -984,3 +1035,5 @@ body {
     width: 100%;
     height: auto;
 }
+
+/* Tienda */
